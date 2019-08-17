@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) },
   { path: 'lista-carros', component: ListaCarrosComponent },
-  { path: 'lista-acessorios', component: AcessoriosCarroComponent, loadChildren: () => import('./home/lista-carros/lista-carros.module').then(m => m.ListaCarrosModule) }
+  { path: 'lista-acessorios/:carro', component: AcessoriosCarroComponent, loadChildren: () => import('./home/lista-carros/lista-carros.module').then(m => m.ListaCarrosModule) }
 
 
 ];

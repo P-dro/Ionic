@@ -1,6 +1,6 @@
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let carro of carros" href="/lista-acessorios">
+    <ion-item *ngFor="let carro of carros" href="/lista-acessorios/{{carro.modelo}}">
       {{carro.modelo}}
     </ion-item>
   </ion-list>
