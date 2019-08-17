@@ -1,3 +1,7 @@
-<p>
-  acessorios-carro works!
-</p>
+<ion-card class="secondary" *ngFor="let acessorio of acessorios">
+  <ion-card-header>
+    <ion-card-subtitle>{{acessorio.acessorio}}</ion-card-subtitle>
+    <ion-card-title>Card Title</ion-card-title>
+  </ion-card-header>
+</ion-card>
+<ion-button href="#">Back</ion-button>
